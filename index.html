@@ -1,0 +1,405 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Trang chủ</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link href=’http://fonts.googleapis.com/css?family=Roboto’ rel=’stylesheet’ type=’text/css’>
+        <link rel="stylesheet" type="text/css" href="fonts.css">
+
+    </head>
+    <body >
+    <header>
+            <div class="logo">
+                <div class="col-md-5" style="padding-left:80px"><i class="fa fa-home" style="color: white"></i><span style="color: white ">Địa chỉ:251/7,Bùi Văn Ngữ,P.Hiệp Chánh,Q.12, TP.HCM</span></div>
+                <div class="col-md-3" id="hotline"><i class="fa fa-mobile fa-5x"  aria-hidden="true"><span style="font-weight: Bold;font-size: 15px" >Hotline</span>:0907893880</i></div>
+                <div class="col-md-4" id="link" >
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-google"></a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        <div class="menu" style=" font-size: 15px">
+                 <div class="col-md-4" style="text-align: center;margin-top: 25px;width: 385px"><img src="img/logo.png"/>
+                     <div class="clearfix"></div>
+                 </div>
+            <div class="col-md-8" style="text-align: center" >
+                <ul>
+                    <li> <a href="index.html" >TRANG CHỦ</a></li>
+                    <li> <a href="Gioithieu.html" >GIỚI THIỆU</a></li>
+                    <li class="dropdown"> <a href="Sanpham.html" class="dropbtn">SẢN PHẨM</a>
+                        <div class="dropdown-content">
+                            <a  href="#">BỘ BÀN GHẾ PHÒNG KHÁCH </a>
+                            <a href="#">BỘ BÀN ĂN </a>
+                            <a href="#">SALON PHÒNG KHÁCH  </a>
+                            <a href="#">BÀN THỜ TAM HỆ </a>
+                            <a href="#">KỆ TI VI </a>
+                            <a href="#">TỦ RƯỢU </a>
+                            <a href="#">GIƯỜNG NGỦ </a>
+                            <a href="#">TỦ BẾP CAO CẤP </a>
+                            <a href="#">TỦ ÁO </a>
+                            <a href="#">CẦU THANG </a>
+                            <a href="#">CÁNH CỬA PHÒNG KHÁCH </a>
+                            <a href="#">BÀN LÀM VIỆC </a>
+                            <a href="#">ĐỒNG HỒ QUẢ LẮC </a>
+                            <a href="#">LỤC BÌNH GỖ </a>
+                        </div>
+                    </li>
+                    <li><a href="Dichvu.html" >DỊCH VỤ</a></li>
+                    <li><a href="Tailieu.html" >TÀI LIỆU</a></li>
+                    <li><a href="Tintuc.html" >TIN TỨC</a></li>
+                    <li><a href="Tuyendung.html" >TUYỂN DỤNG</a></li>
+                    <li><a href="lienlac.html" >LIÊN HỆ</a></li>
+                    <div id="search">
+                        <div class="click_icon"><img src="img/search.png" height="20" width="20"/></div>
+                        <div id="search_box" style="display: none;">
+                            <form id="form_search" name="form_search" method="get" >
+                                <input type="hidden" name="com" value="search">
+                                <input type="text" name="keyword" id="keyword" class="txt_search" value="" placeholder="Tìm kiếm">
+                                <div id="btn_search">Tìm kiếm</div>
+                            </form>
+                        </div>
+                    </div>
+                </ul>
+
+            </div>
+                <div class="clearfix"></div>
+        </div>
+    </header>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.click_icon').click(function(event) {
+                $('#search_box').stop().slideToggle();
+            });
+        });
+    </script>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="img/background.png" height="529" width="100%"/>
+            <div class="text"></div>
+        </div>
+        <div class="mySlides fade">
+            <img style="position: relative" src="img/slideshow4.png" height="529" width="100%"/>
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/slideshow2.png"   height="529" width="100%"/></div>
+    </div>
+    <br>
+
+    <div style="text-align:center;display: none">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+        <div class="dichvu" style="text-align: justify">
+            <div class="col-md-3">
+                <div class="col-md-4"><img src="img/logoxe1.png"/>
+                </div>
+                <div class="col-md-8">
+                    <span style="font-weight: Bold;font-size: 16px;padding-top: 12px;float: left;"> Miễn Phí Vận Chuyển</span><br/><span style="font-style: italic"> Bán kính 20km</span></div></div>
+            <div class="col-md-3">
+                <div class="col-md-4">
+                    <img src="img/boxlogo.png" /></div>
+                <div class="col-md-8">
+                    <span style="font-weight: Bold;font-size: 17px">  Đổi trả hàng</span><br/><span style="font-style: italic">trong vòng 30 ngày</span></div></div>
+            <div class="col-md-3">
+                <div class="col-md-4">
+                    <img src="img/sale.png"/></div>
+                <div class="col-md-8">
+                    <span style="font-weight: Bold;font-size: 17px"> Giảm giá</span><br/><span style="font-style: italic">cho nhiều mặt hàng</span></div></div>
+
+            <div class="col-md-3">
+                <div class="col-md-4">
+                    <img src="img/dienthoailogo.png"/></div>
+                <div class="col-md-8">
+                    <span style="font-weight: Bold;font-size: 17px"> Hỗ trợ khách hàng</span><br/><span style="font-style: italic">0907893880</span></div></div>
+    <div class="clearfix"></div>
+        </div>
+    <div class="sanpham">
+        <div class="col-md-3 sidenav" id="menusanpham">
+            <p style="background-color: red;color: white;font-size:20px;text-align: center;height: 60px;border-top-left-radius: 15px; border-top-right-radius: 15px;padding-top: 20px " >DANH MỤC SẢN PHẨM</p>
+            <ul class="fixed">
+                <li class="dropdown1"><a> <i class="fa fa-caret-right"></i>BỘ BÀN GHẾ PHÒNG KHÁCH<i style="color: blue;float: right" class="fa fa-plus-square-o fa-2x" aria-hidden="true"></i></a>
+                    <div class="dropdown-content1">
+                        <div class="sub1"><a href="#">BỘ BÀN GHẾ PHÒNG KHÁCH </a></div>
+                        <div class="sub1"><a href="#">BỘ BÀN ĂN </a></div>
+                        <div class="sub1"><a href="#">SALON PHÒNG KHÁCH  </a></div>
+                    </div>
+                </li>
+                <script>
+                    $(document).ready(function(){
+                        $(".dropdown1").click(function(){
+                            $(".dropdown-content1").toggle();
+                        });
+                    });
+                </script>
+                <li class=" dropdown2"><a > <i class="fa fa-caret-right"></i>SALON PHÒNG KHÁCH<i style="color: blue;float: right" class="fa fa-plus-square-o fa-2x" aria-hidden="true"></i></a>
+                     <div class="dropdown-content2 ">
+                         <div class="sub1"><a href="#">BỘ BÀN GHẾ PHÒNG KHÁCH </a></div>
+                         <div class="sub1"><a href="#">BỘ BÀN ĂN </a></div>
+                         <div class="sub1"><a href="#">SALON PHÒNG KHÁCH </a></div>
+                     </div>
+                 </li>
+                <script>
+                    $(document).ready(function(){
+                        $(".dropdown2").click(function(){
+                            $(".dropdown-content2").toggle();
+                        });
+                    });
+                </script>
+                <li class="dropdown3"><a ><i class="fa fa-caret-right"></i>BÀN THỜ TAM HỆ<i style="color: blue;float: right" class="fa fa-plus-square-o fa-2x" aria-hidden="true"></i></a>
+                    <div class="dropdown-content3 ">
+                        <div class="sub1"><a href="#">BỘ BÀN GHẾ PHÒNG KHÁCH </a></div>
+                        <div class="sub1"><a href="#">BỘ BÀN ĂN </a></div>
+                        <div class="sub1"><a href="#">SALON PHÒNG KHÁCH  </a></div>
+                    </div>
+                </li>
+                <script>
+                    $(document).ready(function(){
+                        $(".dropdown3").click(function(){
+                            $(".dropdown-content3").toggle();
+                        });
+                    });
+                </script>
+                <li class="dropdown4"><a><i class="fa fa-caret-right"></i>KỆ TI VI<i style="color: blue;float: right" class="fa fa-plus-square-o fa-2x" aria-hidden="true"></i> </a>
+                    <div class="dropdown-content4 ">
+                        <div class="sub1"><a href="#">BỘ BÀN GHẾ PHÒNG KHÁCH </a></div>
+                        <div class="sub1"><a href="#">BỘ BÀN ĂN </a></div>
+                        <div class="sub1"><a href="#">SALON PHÒNG KHÁCH  </a></div>
+                    </div>
+                </li>
+                <script>
+                    $(document).ready(function(){
+                        $(".dropdown4").click(function(){
+                            $(".dropdown-content4").toggle();
+                        });
+                    });
+                </script>
+                <i style="color: blue;float: right" class="fa fa-plus-square-o fa-2x" aria-hidden="true"></i>
+               <li><a href="#"><i class="fa fa-caret-right"></i>TỦ RƯỢU</a><i style="color: blue;float: right" class="fa fa-plus-square-o fa-2x" aria-hidden="true"></i> </li>
+                <li><a href="#"><i class="fa fa-caret-right"></i>GIƯỜNG NGỦ</a><i style="color: blue;float: right" class="fa fa-plus-square-o fa-2x" aria-hidden="true"></i> </li>
+                <li><a href="#"><i class="fa fa-caret-right"></i>TỦ BẾP CAO CẤP</a><i style="color: blue;float: right" class="fa fa-plus-square-o fa-2x" aria-hidden="true"></i> </li>
+                <li><a href="#"><i class="fa fa-caret-right"></i>TỦ ÁO</a><i style="color: blue;float: right" class="fa fa-plus-square-o fa-2x" aria-hidden="true"></i></li>
+                <li><a href="#"><i class="fa fa-caret-right"></i>CẦU THANG</a><i style="color: blue;float: right" class="fa fa-plus-square-o fa-2x" aria-hidden="true"></i> </li>
+               <li><a href="#"><i class="fa fa-caret-right"></i>CÁNH CỬA PHÒNG KHÁCH</a><i style="color: blue;float: right" class="fa fa-plus-square-o fa-2x" aria-hidden="true"></i> </li>
+                <li><a href="#"><i class="fa fa-caret-right"></i>BÀN LÀM VIỆC </a><i style="color: blue;float: right" class="fa fa-plus-square-o fa-2x" aria-hidden="true"></i></li>
+               <li><a href="#"><i class="fa fa-caret-right"></i> HỒ QUẢ LẮC </a><i style="color: blue;float: right" class="fa fa-plus-square-o fa-2x" aria-hidden="true"></i> </li>
+                <li><a href="#"><i class="fa fa-caret-right"></i>LỤC BÌNH GỖ</a> </li>
+            </ul>
+
+            <div class="clearfix"></div>
+        </div>
+            <div class="col-md-9">
+                <h2 style="color: red;font-size: 20px">SẢN PHẨM BÁN CHẠY</h2>
+                <hr width="30%" size="10px"  color="yellow" align="left"/>
+                <div class="col-md-4">
+                    <div><img src="img/Sanpham/sanpham2.png" width="100%" /><br/><span style="font-weight: Bold;font-size: 18px"> Bàn ghế gỗ Gõ Đỏ tay 12 mặt liền<br/>(6 món)</span><br/>Mã:ĐG123<br/>Giá : <span style="color: red">7.500.000 VNĐ</span></div>
+                    <div><img src="img/Sanpham/sanpham2.png" width="100%" /><br/><span style="font-weight: Bold;font-size: 18px"> Bàn ghế gỗ Gõ Đỏ tay 12 mặt liền<br/>(6 món)</span><br/>Mã:ĐG123<br/>Giá : <span style="color: red">7.500.000 VNĐ</span></div>
+                    <div><img src="img/Sanpham/sanpham9.png"width="100%"/><br/><span style="font-weight: Bold;font-size: 18px">Bàn ghế gỗ Gõ Đỏ tay 12 mặt liền<br/>(6 món)</span><br/>Mã:ĐG123<br/>Giá : <span style="color: red">7.500.000 VNĐ</span></div>
+
+                </div>
+                <div class="col-md-4">
+                    <div><img src="img/Sanpham/sanpham3.png" width="100%"/><br/><span style="font-weight: Bold;font-size: 18px">Bàn ghế gỗ Gõ Đỏ tay 12 mặt liền<br/>(6 món)</span><br/>Mã:ĐG123<br/>Giá : <span style="color: red">7.500.000 VNĐ</span></div>
+                    <div ><img src="img/Sanpham/sanpham4.png" width="100%"/><br/><span style="font-weight: Bold;font-size: 18px">Bàn ghế gỗ Gõ Đỏ tay 12 mặt liền<br/>(6 món)</span><br/>Mã:ĐG123<br/>Giá : <span style="color: red">7.500.000 VNĐ</span></div>
+                    <div ><img src="img/Sanpham/sanpham5.png" width="100%"/><br/><span style="font-weight: Bold;font-size: 18px">Bàn ghế gỗ Gõ Đỏ tay 12 mặt liền<br/>(6 món)</span><br/>Mã:ĐG123<br/>Giá : <span style="color: red">7.500.000 VNĐ</span></div>
+                </div>
+                <div class="col-md-4">
+                    <div><img src="img/Sanpham/sanpham6.png" width="100%"/><br/><span style="font-weight: Bold;font-size: 18px">Bàn ghế gỗ Gõ Đỏ tay 12 mặt liền<br/>(6 món)</span><br/>Mã:ĐG123<br/>Giá : <span style="color: red">7.500.000 VNĐ</span></div>
+                    <div><img src="img/Sanpham/sanpham7.png" width="100%"/><br/><span style="font-weight: Bold;font-size: 18px">Bàn ghế gỗ Gõ Đỏ tay 12 mặt liền<br/>(6 món)</span><br/>Mã:ĐG123<br/>Giá : <span style="color: red">7.500.000 VNĐ</span></div>
+                    <div><img src="img/Sanpham/sanpham8.png" width="100%"/><br/><span style="font-weight: Bold;font-size: 18px">Bàn ghế gỗ Gõ Đỏ tay 12 mặt liền<br/>(6 món)</span><br/>Mã:ĐG123<br/>Giá : <span style="color: red">7.500.000 VNĐ</span></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="ads" style="margin-top: 50px"  >
+        <h1 style="color: red">SẢN PHẨM TIÊU BIỂU</h1>
+        <hr color="yellow" width="28%" style="text-align: center"/>
+        <div class="col-md-3"><img src="img/Sanpham/sanphamtieubieu1.png" width="100%"/><br/>Bàn ghế gỗ Gõ Đỏ tay 12 mặt liền<br/>(6 món)<br/>Mã:ĐG123<br/>Giá : <span style="color: red">7.500.000 VNĐ</span></div>
+        <div class="col-md-3"><img src="img/Sanpham/sanphamtieubieu2.png" width="100%"/><br/>Bàn ghế gỗ Gõ Đỏ tay 12 mặt liền<br/>(6 món)<br/>Mã:ĐG123<br/>Giá : <span style="color: red">7.500.000 VNĐ</span></div>
+        <div class="col-md-3"><img src="img/Sanpham/sanphamtieubieu3.png" width="100%"/><br/>Bàn ghế gỗ Gõ Đỏ tay 12 mặt liền<br/>(6 món)<br/>Mã:ĐG123<br/>Giá : <span style="color: red">7.500.000 VNĐ</span></div>
+        <div class="col-md-3"><img src="img/Sanpham/sanphamtieubieu4.png" width="100%"/><br/>Bàn ghế gỗ Gõ Đỏ tay 12 mặt liền<br/>(6 món)<br/>Mã:ĐG123<br/>Giá : <span style="color: red">7.500.000 VNĐ</span></div>
+
+    <div class="clearfix"></div>
+    </div>
+    <div class="bobanghephongkhach" style="margin-top: 50px">
+        <h1 style="color: red;margin-left: 50px ">BỘ BÀN GHẾ PHÒNG KHÁCH</h1>
+        <hr color="yellow" width="35%" style="text-align: center;margin-left: 50px;height: 5px"/>
+        <div style="margin-left: 50px;margin-right: 50px">
+            <div class="col-md-3"><img src="img/Sanpham/bobanghephongkhach1.png" width="100%"/><br/>Bàn ghế gỗ Gõ Đỏ tay 12 mặt liền<br/>(6 món)<br/>Mã:ĐG123<br/>Giá : <span style="color: red">7.500.000 VNĐ</span></div>
+            <div class="col-md-3"><img src="img/Sanpham/bobanghephongkhach2.png" width="100%"/><br/>Bàn ghế gỗ Gõ Đỏ tay 12 mặt liền<br/>(6 món)<br/>Mã:ĐG123<br/>Giá : <span style="color: red">7.500.000 VNĐ</span></div>
+            <div class="col-md-3"><img src="img/Sanpham/bobanghephongkhach3.png" width="100%"/><br/>Bàn ghế gỗ Gõ Đỏ tay 12 mặt liền<br/>(6 món)<br/>Mã:ĐG123<br/>Giá : <span style="color: red">7.500.000 VNĐ</span></div>
+            <div class="col-md-3"><img src="img/Sanpham/bobanghephongkhach4.png" width="100%"/><br/>Bàn ghế gỗ Gõ Đỏ tay 12 mặt liền<br/>(6 món)<br/>Mã:ĐG123<br/>Giá : <span style="color: red">7.500.000 VNĐ</span></div>
+            <div class="clearfix"></div>
+        </div>
+        <div style="margin-left: 50px;margin-right: 50px">
+            <div class="col-md-3"><img src="img/Sanpham/bobanghephongkhach5.png" width="100%"/><br/>Bàn ghế gỗ Gõ Đỏ tay 12 mặt liền<br/>(6 món)<br/>Mã:ĐG123<br/>Giá : <span style="color: red">7.500.000 VNĐ</span></div>
+            <div class="col-md-3"><img src="img/Sanpham/bobanghephongkhach6.png" width="100%"/><br/>Bàn ghế gỗ Gõ Đỏ tay 12 mặt liền<br/>(6 món)<br/>Mã:ĐG123<br/>Giá : <span style="color: red">7.500.000 VNĐ</span></div>
+            <div class="col-md-3"><img src="img/Sanpham/bobanghephongkhach7.png" width="100%"/><br/>Bàn ghế gỗ Gõ Đỏ tay 12 mặt liền<br/>(6 món)<br/>Mã:ĐG123<br/>Giá : <span style="color: red">7.500.000 VNĐ</span></div>
+            <div class="col-md-3"><img src="img/Sanpham/bobanghephongkhach8.png" width="100%"/><br/>Bàn ghế gỗ Gõ Đỏ tay 12 mặt liền<br/>(6 món)<br/>Mã:ĐG123<br/>Giá : <span style="color: red">7.500.000 VNĐ</span></div>
+        <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="tintucvsvideo" style="margin-left: 50px">
+        <div class="col-md-6" >
+            <h1 style="color: red">TIN TỨC</h1>
+            <hr width="25%" size="10px"  color="yellow" align="left"/>
+            <div class="col-md-5">
+                <img src="img/Sanpham/tintuc1.png"/><br/><p style="color: green;font-size: 12px">Thứ tư, 14/06/2017 |09:00 GMT +7|</p>Khi chọn mua ghế sofa gỗ, bạn nên chú ý đến kiểu dáng của chúng sao cho phù hợp với nội thất trong phòng.Hiện nay, có rất <br/>nhiều loại ghế sofa được thế kế theo kiểu truyền thống, hiện đại và phá cách mới lạ...  </div>
+            <div class="col-md-7"  >
+                <div class="col-md-5">
+                    <img src="img/Sanpham/tintuc2.png"/></div>
+                <div class="col-md-7">
+                    Khi chọn mua ghế sofa gỗ, bạn nên chú ý đến kiểu dáng của chúng sao cho phù hợp với nội thất trong phòng.Hiện nay, có rất nhiều loại ghế sofa được thế kế theo kiểu truyền thống, hiện đại và phá cách mới lạ...
+                </div>
+            </div>
+            <div class="col-md-7" style="margin-top: 20px" >
+                <div class="col-md-5">
+                    <img src="img/Sanpham/tintuc2.png"/></div>
+                <div class="col-md-7">
+                    Khi chọn mua ghế sofa gỗ, bạn nên chú ý đến kiểu dáng của chúng sao cho phù hợp với nội thất trong phòng.Hiện nay, có rất nhiều loại ghế sofa được thế kế theo kiểu truyền thống, hiện đại và phá cách mới lạ...
+                </div>
+            </div>
+            <ul class="pagination modal-1">
+                <li><a href="#" class="prev">&laquo</a></li>
+                <li><a href="#" class="active">1</a></li>
+                <li> <a href="#">2</a></li>
+                <li> <a href="#">3</a></li>
+                <li> <a href="#">4</a></li>
+                <li> <a href="#">5</a></li>
+                <li> <a href="#">6</a></li>
+                <li><a href="#" class="next">&raquo;</a></li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-md-6">
+            <h1 style="color: red">VIDEO</h1>
+            <hr width="25%" size="10px"  color="yellow" align="left"/>
+            <iframe width="90%" height="315" src="https://www.youtube.com/embed/rt5uzJfITvg" frameborder="0" allowfullscreen></iframe>
+            <ul class="pagination modal-1">
+                <li><a href="#" class="prev">&laquo</a></li>
+                <li><a href="#" class="active">1</a></li>
+                <li> <a href="#">2</a></li>
+                <li> <a href="#">3</a></li>
+                <li> <a href="#">4</a></li>
+                <li> <a href="#">5</a></li>
+                <li> <a href="#">6</a></li>
+                <li><a href="#" class="next">&raquo;</a></li>
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <footer>
+        <div class="col-md-4" id="vechungtoi" style="margin-left: 45px">
+            <div><img src="img/logo.png"width="300px"style="text-align: center"/></div>
+            <div><i class="fa fa-home" aria-hidden="true"></i>Địa chỉ:251/7,Bùi Văn Ngữ,p.Hiệp Chánh,Q.12,TP.HCM</div>
+            <div><i class="fa fa-mobile" aria-hidden="true"></i>Hotline Hỗ Trợ:0907893880</div>
+            <div><i class="fa fa-globe" aria-hidden="true"></i>Website:0907893880</div>
+            <div><i class="fa fa-envelope" aria-hidden="true"></i>Email:goluongtaiphat@gmail.com</div>
+        </div>
+            <div id="map" style="position: relative"></div>
+            <script>
+                function initMap() {
+                    var uluru = {lat:  10.88, lng: 106.63};
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 16,
+                        center: uluru
+                    });
+                    var marker = new google.maps.Marker({
+                        position: uluru,
+                        map: map
+                    });
+                }
+            </script>
+            <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgouksBrK52W8ObYNuimtzmgKzeHsLYBk&callback=initMap">
+            </script>
+            <div class="clearfix"></div>
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+            var div = $('.menu');
+            var start = $(div).offset().top;
+            $.event.add(window, "scroll", function() {
+                var p = $(window).scrollTop();
+                $(div).css('position',((p)>start) ? 'fixed' : 'static');
+                $(div).css('top',((p)>start) ? '0px' : '');
+            });
+
+        });
+    </script>
+
+
+    <!--<script>
+    var timer = null;
+    var l = 0;
+    function scrollLogo() {
+    var ads = document.getElementsByClassName("ads")[0];
+    var span = document.querySelectorAll("div.ads")[0];
+    var inc = 1;
+    var imgWidth = 135px;
+
+    timer = setInterval(function() {
+    if (l + span.offsetWidth - 30 < 0)
+    l = ads.offsetWidth - 30;
+
+    l -= inc;
+
+    span.style.left = l + "px";
+
+    }, 30);
+    }
+
+    function stopScrollLogo() {
+    if (timer != null)
+    clearInterval(timer);
+    }
+</script>-->
+
+    <script>
+        var slideIndex;
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex].style.display = "block";
+            dots[slideIndex].className += " active";
+            slideIndex++;
+            if (slideIndex > slides.length - 1) {
+                slideIndex = 0
+            }
+            setTimeout(showSlides, 5000);
+        }
+        showSlides(slideIndex = 0);
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+    </script>
+    </body>
+</html>

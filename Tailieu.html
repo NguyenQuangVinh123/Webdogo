@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tài liệu</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <div class="col-sm-4" style="height: 44px"><i class="fa fa-home"></i> Địa chỉ:251/7,Bùi Văn Ngữ,P.Hiệp Chánh,Q.12, TP.HCM</div>
+        <div class="col-sm-4"><i class="fa fa-mobile" aria-hidden="true">Hotline:0907893880 </i></div>
+        <div class="col-sm-4" id="link">
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-google"></a>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="menu">
+        <div class="col-sm-4" style="text-align: center;margin-top: 25px;width: 385px"><img src="img/logo.png"/>
+            <div class="clearfix"></div>
+        </div>
+        <div>
+            <ul>
+                <li> <a href="index.html" >TRANG CHỦ</a></li>
+                <li> <a href="Gioithieu.html" >GIỚI THIỆU</a></li>
+                <li> <a href="Sanpham.html" >SẢN PHẨM</a></li>
+                <li><a href="Dichvu.html" >DỊCH VỤ</a></li>
+                <li><a href="Tailieu.html" >TÀI LIỆU</a></li>
+                <li><a href="Tintuc.html" >TIN TỨC</a></li>
+                <li><a href="Tuyendung.html" >TUYỂN DỤNG</a></li>
+                <li><a href="lienlac.html" >LIÊN HỆ</a></li>
+                <div id="search">
+                    <div class="click_icon"><img src="img/search.png" height="20" width="20"/></div>
+                    <div id="search_box" style="display: none;">
+                        <form id="form_search" name="form_search" method="get" >
+                            <input type="hidden" name="com" value="search">
+                            <input type="text" name="keyword" id="keyword" class="txt_search" value="" placeholder="Tìm kiếm">
+                            <div id="btn_search">Tìm kiếm</div>
+                        </form>
+                    </div>
+                </div>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</header>
+<h1 style="color: red;margin-left: 150px;">Tài liệu</h1>
+<hr style="color: red"/>
+<p style="margin-left: 100px;font-size: 15px">Mục này sẽ cập nhập sau....</p>
+<footer>
+    <div class="col-sm-5" id="vechungtoi" style="margin-left: 45px">
+        <div><img src="img/logo.png"width="300px"style="text-align: center"/></div>
+        <div><i class="fa fa-home" aria-hidden="true"></i>Địa chỉ:251/7,Bùi Văn Ngữ,p.Hiệp Chánh,Q.12,TP.HCM</div>
+        <div><i class="fa fa-mobile" aria-hidden="true"></i>Hotline Hỗ Trợ:0907893880</div>
+        <div><i class="fa fa-globe" aria-hidden="true"></i>Website:0907893880</div>
+        <div><i class="fa fa-envelope" aria-hidden="true"></i>Email:goluongtaiphat@gmail.com</div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="col-sm-3" id="hotro" >
+        <h5>Liên Hệ<i class="fa fa-envelope" style="padding-left: 230px" ></i></h5>
+        <input type="text" placeholder="Họ và tên...">
+        <input type="text" placeholder="Email...">
+        <input type="text" placeholder="Tiêu đề...">
+        <input type="text" style="height: 70px" placeholder="Nội dung...">
+        <input  style="color:white;background-color: yellow;padding-top: 5px;width: 180px;margin-right:10px;height: 35px;border-radius: 20%;float: right" type="button" value="Send message" >
+    </div>
+    <div class="col-sm-3" id="thongke">
+        <div id="map"></div>
+        <script>
+            function initMap() {
+                var uluru = {lat:  10.88, lng: 106.63};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 16,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgouksBrK52W8ObYNuimtzmgKzeHsLYBk&callback=initMap">
+        </script>
+    </div>
+    <div class="clearfix"></div>
+</footer>
+<script>
+    $(document).ready(function() {
+        var div = $('.menu');
+        var start = $(div).offset().top;
+        $.event.add(window, "scroll", function() {
+            var p = $(window).scrollTop();
+            $(div).css('position',((p)>start) ? 'fixed' : 'static');
+            $(div).css('top',((p)>start) ? '0px' : '');
+        });
+
+    });
+</script>
+
+</body>
+</html>

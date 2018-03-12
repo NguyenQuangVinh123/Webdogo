@@ -1,0 +1,18 @@
+@font-face {
+    font-family: abc;
+url('fonts/UTMSwissCondensed.woff2') format('woff2'), /* Modern Browsers */
+url('fonts/UTMSwissCondensed.woff') format('woff'), /* Modern Browsers */
+url('fonts/UTMSwissCondensed.ttf') format('truetype'), /* Safari, Android, iOS */
+url('fonts/UTMSwissCondensed.svg') format('svg'); /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyFontName2';
+url('fonts/Roboto TTF/RobotoCondensed.woff2') format('woff2'), /* Modern Browsers */
+url('fonts/Roboto TTF/RobotoCondensed.woff') format('woff'), /* Modern Browsers */
+url('fonts/Roboto TTF/RobotoCondensed.ttf') format('truetype'), /* Safari, Android, iOS */
+url('fonts/Roboto TTF/RobotoCondensed.svg') format('svg'); /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
